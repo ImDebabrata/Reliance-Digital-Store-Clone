@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+}
+/* Nav bar top portion */
+#rednav {
+  /* border: 1px solid black; */
+  background-color: #e4252a;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  /* padding: 0 10px 0 25px; */
+}
+#rednav > div > img {
+  width: 150px;
+}
+#rednav > div:nth-child(2) {
+  flex-basis: 40%;
+}
+#rednav > div > a {
+  color: white;
+  margin: 10px;
+  font-size: 1.2vw;
+  text-decoration: none;
+}
+.saperator {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 0px 5px;
+}
+.fa-shopping-cart,
+.fa-user-alt,
+.fa-map-marker {
+  color: white;
+  padding: 5px;
+}
+#rednav > div:nth-child(2) > button {
+  border: none;
+  background-color: white;
+  position: absolute;
+  margin: 2px -45px;
+  height: 30px;
+  width: 30px;
+}
+#storeSearch {
+  height: 35px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 15px;
+}
+/* Nav bar bottom portion */
+#bluenav {
+  background-color: #1f4985;
+  display: flex;
+  justify-content: space-around;
+  height: 35px;
+  /* padding: 10px; */
+}
+#bluenav > button {
+  /* margin: 5px; */
+  border: none;
+  width: auto;
+  height: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #1f4985;
+  color: white;
+  padding: 5px;
+  font-size: 0.9vw;
+}
+button.arrow {
+  border: 1px solid red;
+  width: auto;
+  height: auto;
+  display: block;
+  font-size: 0.8vw;
+  transform: rotate(-90deg);
+  /* overflow: hidden; */
+}
+#bluenav > button:hover {
+  background-color: #e4252a;
+  display: block;
+}
+
+.fa-search {
+  color: gray;
+}
+/* Style for dropdown menu */
+.drop-menu {
+  margin-top: 35px;
+  width: 95%;
+  height: auto;
+  position: absolute;
+  border: 1px solid gray;
+  border-top: none;
+  background-color: #263065;
+  display: none;
+}
+div.drop-menu {
+  color: white;
+  /* display: none; */
+}
+div.drop-menu > div > ul {
+  font-weight: bold;
+  font-size: 1vw;
+  margin-bottom: 10px;
+}
+div.drop-menu > div {
+  margin: 10px 25px;
+}
+div.drop-menu > div > ul > li {
+  font-weight: 100;
+  list-style: none;
+  margin: 5px auto 10px auto;
+}
+/* Mobile Section */
+#bluenav > #mobile:hover + div.mobile,
+.mobile:hover {
+  display: flex;
+  background-image: url("https://www.reliancedigital.in/medias/Mobiles-Tablet-Menu-Banners-04-01-2021-01.jpg?context=bWFzdGVyfGltYWdlc3wxMTkxOTN8aW1hZ2UvanBlZ3xpbWFnZXMvaGM0L2gxNy85NTIwNDc1MzczNTk4LmpwZ3xjMmU0NzlmMWZjODQyMmFmNDZhMjA2NTUwZTVhNTI4ODcxMWVkZjM5YzgyNDY3YTE3ODU1OWM0NGQyY2E4MmVi");
+  background-size: cover;
+}
+/* Computer Section */
+#bluenav > #computer:hover + div.computer,
+.computer:hover {
+  background-image: url("https://www.reliancedigital.in/medias/Computers-Menu-Banners-04-01-2021.jpg?context=bWFzdGVyfGltYWdlc3wxMzI5NDF8aW1hZ2UvanBlZ3xpbWFnZXMvaDQzL2g1Ny85NDU1NTQ0Nzk1MTY2LmpwZ3w3YThhZWU1NGYwZjY4ODA2Yjg1N2MyNzk4MTNlN2RkNGUxMjE1NjI5ZGQyMzAzOTk2NTMxZGIxOWMzOGM1NTJl");
+  background-size: cover;
+}
+/* Personal care section */
+#bluenav > #personal-care:hover + div.personal-care,
+.personal-care:hover {
+  background-image: url("https://www.reliancedigital.in/medias/Personal-Care-Menu-Banners-04-01-2021.jpg?context=bWFzdGVyfGltYWdlc3w2MTMxNnxpbWFnZS9qcGVnfGltYWdlcy9oZDUvaGI4Lzk0NTU1NDQ5OTE3NzQuanBnfDVlYjM3ZmQ0OWRhMGI0NmU2YjVmZDk1ZGE4Njc0MGJmNmQyMzEyMjNlMjI1MTJhMmU5MTVjNGFiMmU3N2M2YTE");
+  background-size: 100% 100%;
+}
+/* General Section */
+#bluenav > button:hover + div,
+.drop-menu:hover {
+  display: flex;
+}
