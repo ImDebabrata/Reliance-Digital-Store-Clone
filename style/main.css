@@ -36,13 +36,9 @@
   background-color: black !important;
 }
 .arrowbtn > button {
-  /* width: 50px; */
-  /* height: 50px; */
   font-size: 3vw;
   border: none;
   background-color: transparent;
-  /* position: absolute; */
-  /* top: 65%; */
   cursor: pointer;
 }
 .first_arrow > button {
@@ -54,11 +50,9 @@
 }
 .first_arrow > button:nth-child(1) {
   left: 0vw;
-  /* position: absolute; */
 }
 .first_arrow > button:nth-child(2) {
   right: 0vw;
-  /* position: absolute; */
 }
 /* Style for product heading Sections */
 .product-sec {
@@ -86,25 +80,22 @@
   /* height: 300px; */
   height: auto;
   width: 90%;
-  border: 1px solid black;
   overflow: hidden;
   margin: auto;
 }
 .slide-product {
   height: 100%;
   width: auto;
-  border: 1px solid red;
   display: inline-flex;
+  transition: 0.7s;
 }
 .slide-product > div {
-  border: 1px solid blue;
   height: 100%;
   width: calc(90vw / 5);
   padding: 10px;
 }
 .slide-product > div > img {
   width: 100%;
-  border: 1px solid red;
 }
 .slide-product > div > p:nth-last-child(1) {
   box-sizing: border-box;
@@ -153,5 +144,217 @@ span.price_tag::before {
   left: 2%;
 }
 .second_arrow > button:nth-child(2) {
+  right: 2%;
+}
+/* Style for grid products */
+.grid {
+  height: auto;
+  width: 97%;
+  margin: auto;
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-rows: repeat(1, auto);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+.grid > div > img {
+  width: 100%;
+}
+/* Style for third arrow buttons */
+.third_arrow > button {
+  position: absolute;
+  margin-top: -31vh;
+  height: 4.5vw;
+  width: 2.5vw;
+  box-shadow: 0px 0px 10px -4px grey;
+  /* border: 1px solid black; */
+}
+.third_arrow > button:nth-child(1) {
+  left: 2%;
+}
+.third_arrow > button:nth-child(2) {
+  right: 2%;
+}
+/* Style for product catagory section */
+.product_catagory {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.slide-product > div > p.name_catagory {
+  color: black;
+  font-size: 1.4vw;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+  margin: auto;
+}
+.product_catagory > button {
+  display: block;
+  margin: auto;
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: #003380;
+  color: white;
+  border: none;
+}
+.product_catagory > button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #003380;
+}
+/* Style for four arrow buttons */
+.four_arrow > button {
+  position: absolute;
+  margin-top: -31vh;
+  height: 4.5vw;
+  width: 2.5vw;
+  box-shadow: 0px 0px 10px -4px grey;
+  /* border: 1px solid black; */
+}
+.four_arrow > button:nth-child(1) {
+  left: 2%;
+}
+.four_arrow > button:nth-child(2) {
+  right: 2%;
+}
+/* Style for brand promise */
+.brand_promise {
+  width: 100%;
+  padding: 20px 0;
+}
+.brand_promise > h3 {
+  color: #003380;
+  text-align: center;
+  margin: 25px 0;
+}
+div.brand_promise > div.grid > div > img {
+  /* border: 1px solid black; */
+  width: min-content;
+  margin: auto;
+  display: block;
+}
+div.brand_promise > div.grid > div {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+  border-radius: 7px;
+  border: 1px solid grey;
+}
+div.brand_promise > div.grid > div > p:nth-child(2) {
+  font-weight: bold;
+  color: #003380;
+}
+div.brand_promise > div.grid > div > p:nth-last-of-type(1) {
+  color: grey;
+  font-size: 11px;
+}
+/* Style for five arrow buttons */
+.five_arrow > button {
+  position: absolute;
+  margin-top: -31vh;
+  height: 4.5vw;
+  width: 2.5vw;
+  box-shadow: 0px 0px 10px -4px grey;
+  /* border: 1px solid black; */
+}
+.five_arrow > button:nth-child(1) {
+  left: 2%;
+}
+.five_arrow > button:nth-child(2) {
+  right: 2%;
+}
+/* Style for six arrow buttons */
+.six_arrow > button {
+  position: absolute;
+  margin-top: -31vh;
+  height: 4.5vw;
+  width: 2.5vw;
+  box-shadow: 0px 0px 10px -4px grey;
+  /* border: 1px solid black; */
+}
+.six_arrow > button:nth-child(1) {
+  left: 2%;
+}
+.six_arrow > button:nth-child(2) {
+  right: 2%;
+}
+/* Style for seven arrow buttons */
+.seven_arrow > button {
+  position: absolute;
+  margin-top: -31vh;
+  height: 4.5vw;
+  width: 2.5vw;
+  box-shadow: 0px 0px 10px -4px grey;
+  /* border: 1px solid black; */
+}
+.seven_arrow > button:nth-child(1) {
+  left: 2%;
+}
+.seven_arrow > button:nth-child(2) {
+  right: 2%;
+}
+/* Style for eight arrow buttons */
+.eight_arrow > button {
+  position: absolute;
+  margin-top: -31vh;
+  height: 4.5vw;
+  width: 2.5vw;
+  box-shadow: 0px 0px 10px -4px grey;
+  /* border: 1px solid black; */
+}
+.eight_arrow > button:nth-child(1) {
+  left: 2%;
+}
+.eight_arrow > button:nth-child(2) {
+  right: 2%;
+}
+/* Style for nine arrow buttons */
+.nine_arrow > button {
+  position: absolute;
+  margin-top: -31vh;
+  height: 4.5vw;
+  width: 2.5vw;
+  box-shadow: 0px 0px 10px -4px grey;
+  /* border: 1px solid black; */
+}
+.nine_arrow > button:nth-child(1) {
+  left: 2%;
+}
+.nine_arrow > button:nth-child(2) {
+  right: 2%;
+}
+/* Style for ten arrow buttons */
+.ten_arrow > button {
+  position: absolute;
+  margin-top: -31vh;
+  height: 4.5vw;
+  width: 2.5vw;
+  box-shadow: 0px 0px 10px -4px grey;
+  /* border: 1px solid black; */
+}
+.ten_arrow > button:nth-child(1) {
+  left: 2%;
+}
+.ten_arrow > button:nth-child(2) {
+  right: 2%;
+}
+/* Style for eleven arrow buttons */
+.eleven_arrow > button {
+  position: absolute;
+  margin-top: -31vh;
+  height: 4.5vw;
+  width: 2.5vw;
+  box-shadow: 0px 0px 10px -4px grey;
+  /* border: 1px solid black; */
+}
+.eleven_arrow > button:nth-child(1) {
+  left: 2%;
+}
+.eleven_arrow > button:nth-child(2) {
   right: 2%;
 }
