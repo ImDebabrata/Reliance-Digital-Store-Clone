@@ -357,4 +357,5 @@ div.brand_promise > div.grid > div > p:nth-last-of-type(1) {
 }
 .eleven_arrow > button:nth-child(2) {
   right: 2%;
+  /* none */
 }
