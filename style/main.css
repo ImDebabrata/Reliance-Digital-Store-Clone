@@ -1,3 +1,31 @@
+/* Style for upper nav */
+div#upper_nav {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid black; */
+  background-color: #e4252a;
+  /* position: sticky; */
+  display: flex;
+  justify-content: flex-end;
+}
+div#upper_nav > a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  font-size: 1.1vw;
+  font-weight: bold;
+}
+div#upper_nav > a:nth-child(2)::before {
+  content: "";
+  border: 1px solid white;
+  margin-right: 5px;
+}
+div#upper_nav > a:nth-child(2)::after {
+  content: "";
+  border: 1px solid white;
+  margin-left: 5px;
+}
+/* main page style */
 #main-cont > div:nth-child(1) > img {
   width: 100%;
 }
@@ -357,5 +385,4 @@ div.brand_promise > div.grid > div > p:nth-last-of-type(1) {
 }
 .eleven_arrow > button:nth-child(2) {
   right: 2%;
-  /* none */
 }

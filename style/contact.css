@@ -1,0 +1,80 @@
+div#cover_img {
+  height: 28vw;
+  width: 90%;
+  margin: auto;
+  /* border: 1px solid black; */
+  background-image: url("/illegal-quiver-3898/media/contact_us_cover.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+div#cover_img > p {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+div#cover_img > p.heading_line {
+  font-size: 2.5vw;
+}
+div#cover_img > p.heading_line + p {
+  color: white;
+}
+.grid {
+  /* height: 350px; */
+  width: 80%;
+  margin: 30px auto;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto);
+  text-align: center;
+}
+.grid > div {
+  border: 1px solid grey;
+  height: auto;
+  width: auto;
+  padding-bottom: 60px;
+  color: grey;
+}
+.grid > div > div {
+  background-color: #1f4985;
+}
+.grid > div > div > img {
+  display: block;
+  margin: auto;
+}
+.grid > div > img {
+  width: 10vw;
+}
+.grid p {
+  font-size: 1.2rem;
+  margin: 20px;
+}
+.grid span {
+  display: block;
+}
+.grid a {
+  text-decoration: none;
+  color: #1f4985;
+}
+div.text_content {
+  width: 90%;
+  margin: auto;
+}
+div.text_content a {
+  color: grey;
+  text-decoration: none;
+}
+p.text_header ~ p {
+  line-height: 25px;
+  color: gray;
+}
+p.text_header {
+  font-size: 35px;
+  color: #1f4985;
+  margin: 10px auto;
+}
+.text_content li {
+  list-style-type: circle;
+  margin: 10px 0;
+  color: grey;
+}

@@ -1,0 +1,13 @@
+div#upper_nav {
+  background-color: #e42529;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+div#upper_nav > a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1vw;
+  font-weight: bold;
+}
