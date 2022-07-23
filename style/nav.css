@@ -4,33 +4,6 @@
   box-sizing: border-box;
   font-family: "OpenSans", Arial, Helvetica, sans-serif;
 }
-/* Style for upper nav */
-div#upper_nav {
-  width: 100%;
-  height: auto;
-  /* border: 1px solid black; */
-  background-color: #e4252a;
-  /* position: sticky; */
-  display: flex;
-  justify-content: flex-end;
-}
-div#upper_nav > a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 10px;
-  font-size: 1.1vw;
-  font-weight: bold;
-}
-div#upper_nav > a:nth-child(2)::before {
-  content: "";
-  border: 1px solid white;
-  margin-right: 5px;
-}
-div#upper_nav > a:nth-child(2)::after {
-  content: "";
-  border: 1px solid white;
-  margin-left: 5px;
-}
 /* Style for nav bar */
 nav {
   position: sticky;
@@ -119,7 +92,6 @@ button.arrow {
 #bluenav > button:hover {
   background-color: #e4252a;
   display: block;
-  transition: 2s ease;
 }
 
 .fa-search {
@@ -153,34 +125,31 @@ div.drop-menu > div > ul > li {
   list-style: none;
   margin: 5px auto 10px auto;
 }
+div.drop-menu > div > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
 /* Mobile Section */
 #bluenav > #mobile:hover + div.mobile,
 .mobile:hover {
   display: flex;
   background-image: url("https://www.reliancedigital.in/medias/Mobiles-Tablet-Menu-Banners-04-01-2021-01.jpg?context=bWFzdGVyfGltYWdlc3wxMTkxOTN8aW1hZ2UvanBlZ3xpbWFnZXMvaGM0L2gxNy85NTIwNDc1MzczNTk4LmpwZ3xjMmU0NzlmMWZjODQyMmFmNDZhMjA2NTUwZTVhNTI4ODcxMWVkZjM5YzgyNDY3YTE3ODU1OWM0NGQyY2E4MmVi");
   background-size: cover;
-  transition: 2s ease;
 }
 /* Computer Section */
 #bluenav > #computer:hover + div.computer,
 .computer:hover {
   background-image: url("https://www.reliancedigital.in/medias/Computers-Menu-Banners-04-01-2021.jpg?context=bWFzdGVyfGltYWdlc3wxMzI5NDF8aW1hZ2UvanBlZ3xpbWFnZXMvaDQzL2g1Ny85NDU1NTQ0Nzk1MTY2LmpwZ3w3YThhZWU1NGYwZjY4ODA2Yjg1N2MyNzk4MTNlN2RkNGUxMjE1NjI5ZGQyMzAzOTk2NTMxZGIxOWMzOGM1NTJl");
   background-size: cover;
-  transition: 2s ease;
 }
 /* Personal care section */
 #bluenav > #personal-care:hover + div.personal-care,
 .personal-care:hover {
   background-image: url("https://www.reliancedigital.in/medias/Personal-Care-Menu-Banners-04-01-2021.jpg?context=bWFzdGVyfGltYWdlc3w2MTMxNnxpbWFnZS9qcGVnfGltYWdlcy9oZDUvaGI4Lzk0NTU1NDQ5OTE3NzQuanBnfDVlYjM3ZmQ0OWRhMGI0NmU2YjVmZDk1ZGE4Njc0MGJmNmQyMzEyMjNlMjI1MTJhMmU5MTVjNGFiMmU3N2M2YTE");
   background-size: 100% 100%;
-  transition: 2s ease;
 }
 /* General Section */
 #bluenav > button:hover + div,
 .drop-menu:hover {
   display: flex;
-  /* transform: translateY(-2em); */
-  /* transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
-    z-index 0s linear 0.01s; */
-  transition: 2s ease;
 }
